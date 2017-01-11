@@ -1,0 +1,70 @@
+package DATA;
+import java.util.Date;
+import java.io.BufferedWriter;
+import java.io.FileWriter; 
+import java.io.IOException; 
+import java.io.PrintWriter; 
+import java.util.Scanner;
+
+
+public class ff {
+	
+
+	
+	public static void main(String args[]) 
+  	 {    
+	        Date date = new Date();
+	        Scanner sc=new Scanner(System.in);
+	       	int n,i;
+	        System.out.println("Enter the value of n");
+	      	 n=sc.nextInt();
+	      	int rol[]=new int[n];
+	        
+	      	 String str[]=new String[n];
+	        FileWriter fw;
+  	 BufferedWriter bw; 
+  	PrintWriter pw; 
+  	try { 
+  //	 System.out.println("D:/shubh.txt");
+  //  str[i]=sc.nextLine();
+   
+  	fw = new FileWriter("E:\\demo3.txt",true); 
+  	bw = new BufferedWriter(fw); 
+  	pw = new PrintWriter(bw);
+  	pw.println("\n");
+ 	for(i=1;i<n;i++)
+	   	{
+	   		 
+		System.out.println("Enter the Roll Number: ");
+	   	
+	 rol[i]=sc.nextInt();
+	
+	}
+  	for(i=1;i<n;i++)
+  	{
+  		System.out.println("Enter the Name: ");
+  		str[i]=sc.nextLine();
+  	}
+  	 
+
+  	
+  	for(i=1;i<n;i++)
+  	{
+  		//bw.write(str);
+  		pw.println(str[i]+" "+ rol[i]);
+  		}
+  	//System.out.println("\n");
+  	System.out.println(date.toString());
+pw.println(date.toString());
+  	System.out.println("Data Successfully Appended.........."); 
+  	pw.flush();
+  
+  	}
+  	 catch (Exception io){
+  		 System.out.println("error occured....");
+  	 }
+  	
+
+  	 }
+  	}
+	
