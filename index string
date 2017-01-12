@@ -1,0 +1,45 @@
+package demoprac;
+
+
+import java.io.*;
+public class strng {
+	
+	
+	public static void main(String args[]) throws IOException
+	
+	{	
+		String name;
+		int v= 0;
+		
+		int b = 0;
+		int j=0;
+		char ch = 0;
+		BufferedReader br=new BufferedReader(new InputStreamReader(System.in) );
+
+		System.out.println("Enter a new String : ");
+		name = br.readLine();
+
+		int a1[]=new int[500];
+		
+
+	for(int i = 0; i < name.length(); i ++)
+	{int a=name.length();
+		ch = name.charAt(i);
+		
+		if(ch == 's'|| ch == 'S')
+		{	v=v+1;
+
+		System.out.println("Index= "+i);
+		}
+		else if(Character.isWhitespace(ch))
+			b=b+1;
+		
+	}
+	
+	System.out.println("total (s) in String  : " + v);
+	
+
+	}
+	
+	
+}
