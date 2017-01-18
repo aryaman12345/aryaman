@@ -1,0 +1,51 @@
+package DATA;
+import java.util.ArrayList;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+public class ee {
+	
+	
+	    String name;
+	    int rollno;
+	    ee(String name, int rollno)
+	    {
+	        System.out.println("rollno=\t"+rollno +"    " + "name=\t"+name);
+	        
+	    
+	    }
+
+	    
+
+	}
+
+
+
+package DATA;
+import java.util.ArrayList;
+import java.util.Iterator;
+public class d {
+			public void aaa()
+		{
+		    ArrayList <ee> bb=new <ee> ArrayList();
+
+		    ee obj1=new ee("aa",1);
+		    ee obj2=new ee("bb",2);
+		    ee obj3=new ee("cc",3);
+		    ee obj4=new ee("dd",4);
+		    Iterator itr=bb.iterator();
+		    while(itr.hasNext())
+		    {
+		        System.out.println(itr.next());
+		    }
+		}
+		    public static void main(String[] args) {
+		        d obj=new d();
+		        obj.aaa();
+		        
+		        
+		        
+
+		    }
+
+		}
+
